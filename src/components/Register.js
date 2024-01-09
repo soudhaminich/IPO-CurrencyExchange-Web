@@ -46,34 +46,13 @@ function Register() {
         <div className="register-container">
           <h1>Register</h1>
           <form className="register-form" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              id="username"
-              placeholder="Username"
-              value={username}
-              onChange={handleUsernameChange}
-              required
-            />
-            <input
-              type="email"
-              id="username"
-              placeholder="Email Id"
-              value={email}
-              onChange={handleEmailChange}
-              required
-            />
-            <input
-              type="password"
-              id="password"
-              placeholder="Password"
-              maxLength={8}
-              value={password}
-              onChange={handlePasswordChange}
-              required
-            />
-            <button type="submit">
-              Register
-            </button>
+            <input type="text" id="username" placeholder="Username" value={username} onChange={handleUsernameChange}
+              required/>
+            <input type="email" id="username" placeholder="Email Id" value={email} onChange={handleEmailChange}
+              required/>
+            <input type="password" id="password" placeholder="Password" maxLength={8} value={password} onChange={handlePasswordChange}
+              required/>
+            <button type="submit">Register</button>
           </form>
         </div>
       </div>
